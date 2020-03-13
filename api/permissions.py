@@ -11,3 +11,4 @@ class IsOwnerOrReadOnly(permissions.BasePermission):
 
         # Instance must have an attribute named `owner`.
         return obj.anunciante == request.user
+

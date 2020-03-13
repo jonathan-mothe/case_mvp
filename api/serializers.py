@@ -14,5 +14,7 @@ class DemandaSerializer(serializers.ModelSerializer):
             'numero', 
             'logradouro', 
             'bairro', 
+            'email',
+            'telefone',
             'status', 
             'anunciante')
