@@ -36,17 +36,10 @@ INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
     'django.contrib.messages',
-#    'django.contrib.sites',
     'django.contrib.staticfiles',
     'api',
 
     'rest_framework',
-#    'rest_framework.authtoken' ,
-#    'rest_auth' ,
-#    'rest_auth.registration' ,
-
-#    'allauth',
-#    'allauth.account'
 ]
 
 REST_FRAMEWORK = {
@@ -54,9 +47,9 @@ REST_FRAMEWORK = {
         'rest_framework.authentication.TokenAuthentication',
         'rest_framework.authentication.SessionAuthentication',
     ],
-#    'DEFAULT_PERMISSION_CLASSES': (
-#        'rest_framework.permissions.IsAdminUser',
-#   ),
+    'DEFAULT_PERMISSION_CLASSES': (
+        'rest_framework.permissions.AllowAny',
+   ),
 }
 
 MIDDLEWARE = [
